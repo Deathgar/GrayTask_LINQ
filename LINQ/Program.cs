@@ -13,7 +13,7 @@ namespace LINQ
         {
             var w = new Catalog
             {
-                books = new List<Book>
+                Books = new List<Book>
                 {
                     new Book("1111111111111", "Jopa"),
                     new Book("1111111111222", "Dak"),
@@ -25,13 +25,13 @@ namespace LINQ
             var m = new Author("www", "eee");
             var e = new Author("rrr", "ooo");
 
-            w.books[0].Authors = new List<Author> { q };
-            w.books[1].Authors = new List<Author> { q, m };
-            w.books[2].Authors = new List<Author> { e };
+            w.Books[0].Authors = new List<Author> { q };
+            w.Books[1].Authors = new List<Author> { q, m };
+            w.Books[2].Authors = new List<Author> { e };
 
-            w.books[0].DatePublish = new DateTime(1900, 12, 20);
-            w.books[1].DatePublish = new DateTime(1000, 3, 3);
-            w.books[2].DatePublish = new DateTime(2000, 3, 3);
+            w.Books[0].DatePublish = new DateTime(1900, 12, 20);
+            w.Books[1].DatePublish = new DateTime(1000, 3, 3);
+            w.Books[2].DatePublish = new DateTime(2000, 3, 3);
             return w;
 
         }
@@ -40,7 +40,7 @@ namespace LINQ
         {
             var w = new Catalog
             {
-                books = new List<Book>
+                Books = new List<Book>
                 {
                     new Book("1111111111111", "Jopa"),
                     new Book("1111111111222", "Dak"),
@@ -53,13 +53,13 @@ namespace LINQ
             var m = new Author("www", "eee");
             var e = new Author("rrr", "ooo");
 
-            w.books[0].Authors = new List<Author> { q };
-            w.books[1].Authors = new List<Author> { q, m };
-            w.books[2].Authors = new List<Author> { e };
+            w.Books[0].Authors = new List<Author> { q };
+            w.Books[1].Authors = new List<Author> { q, m };
+            w.Books[2].Authors = new List<Author> { e };
 
-            w.books[0].DatePublish = new DateTime(1900, 12, 20);
-            w.books[1].DatePublish = new DateTime(1000, 3, 3);
-            w.books[2].DatePublish = new DateTime(2000, 3, 3);
+            w.Books[0].DatePublish = new DateTime(1900, 12, 20);
+            w.Books[1].DatePublish = new DateTime(1000, 3, 3);
+            w.Books[2].DatePublish = new DateTime(2000, 3, 3);
             return w;
 
         }
