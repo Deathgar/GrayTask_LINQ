@@ -4,8 +4,8 @@ namespace LINQ
 {
     public class Author
     {
-        public string firstName;
-        public string lastName;
+        private string firstName;
+        private string lastName;
         private const int maxLengthAuthorInfo = 200;
 
         public Author(string firstName, string lastName)

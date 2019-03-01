@@ -21,9 +21,7 @@ namespace LINQ
 
         public List<Book> GetBookForFirstNameAndLastName(string firstName, string lastName)
         {
-
             var w = books.Where(b => b.Authors.Any(a => a.FirstName.Equals(firstName.FirstUpper()) && a.LastName.Equals(lastName.FirstUpper()))).ToList();
-
             return w;
         }
 
@@ -35,7 +33,6 @@ namespace LINQ
         public int GetCountBookFromAuthor(Author author)
         {
             var q = books.Where(book => book.Authors.Contains(author)).ToList();
-
             return q.Count;
         }
 
